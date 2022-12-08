@@ -1,6 +1,25 @@
 # discord-tts
 Node.js module to make your discord bot talk
 
+##Modifications
+
+I modified this module to support other languages than English.
+
+Example of how to use it : 
+```js
+discordTTS.getVoiceStream("Your text goes here !", {lang : "en"})
+```
+
+Modify the value of the `lang` parameter to change the language of the Text-to-Speech voice.
+
+# Examples of languages available : 
+
+fr : French (Français)
+en : English
+es : Spanish (Español)
+it : Italian (Italiano)
+
+
 ## Quick Example for discord.js v12
 ```js
 const secret = require('./secret.json'); //file with your bot credentials/token/etc
