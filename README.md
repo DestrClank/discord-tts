@@ -42,7 +42,7 @@ client.on('message', msg => {
         const channelId = msg.member.voice.channelID;
         const channel = client.channels.cache.get(channelId);
         channel.join().then(connection => {
-            broadcast.play(discordTTS.getVoiceStream('test 123'));
+            broadcast.play(discordTTS.getVoiceStream('test 123', {lang : "en"}));
             const dispatcher = connection.play(broadcast);
         });
     }
@@ -83,7 +83,7 @@ let audioPlayer=new AudioPlayer();
 client.on("messageCreate", async (msg)=>{
     if(msg.content=="tts")
     {
-        const stream=discordTTS.getVoiceStream("hello text to speech world");
+        const stream=discordTTS.getVoiceStream("hello text to speech world", {lang : "en"});
         const audioResource=createAudioResource(stream, {inputType: StreamType.Arbitrary, inlineVolume:true});
         if(!voiceConnection || voiceConnection?.status===VoiceConnectionStatus.Disconnected){
             voiceConnection = joinVoiceChannel({
