@@ -12,15 +12,14 @@ discordTTS.getVoiceStream("Your text goes here !", {lang : "en"})
 
 Modify the value of the `lang` parameter to change the language of the Text-to-Speech voice.
 
-Examples of languages available : 
+### Examples of languages available : 
 
-fr : French (Français)
+**fr** : French (Français)
+**en** : English
+**es** : Spanish (Español)
+**it** : Italian (Italiano)
 
-en : English
-
-es : Spanish (Español)
-
-it : Italian (Italiano)
+Other languages can be found into the `index.js` file.
 
 ## Quick Example for discord.js v12
 ```js
