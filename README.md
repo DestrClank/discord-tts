@@ -14,10 +14,13 @@ Modify the value of the `lang` parameter to change the language of the Text-to-S
 
 ### Examples of languages available : 
 
-**fr** : French (Français)
-**en** : English
-**es** : Spanish (Español)
-**it** : Italian (Italiano)
+`fr` : French (Français)
+
+`en` : English
+
+`es` : Spanish (Español)
+
+`it` : Italian (Italiano)
 
 Other languages can be found into the `index.js` file.
 
