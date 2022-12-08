@@ -10,7 +10,9 @@ Example of how to use it :
 discordTTS.getVoiceStream("Your text goes here !", {lang : "en"})
 ```
 
-Modify the value of the `lang` parameter to change the language of the Text-to-Speech voice.
+Modify the value of the `lang` parameter to change the language of the Text-to-Speech voice. You just have to take the first part of the language code before the `-`.
+
+Example : `en-US` become `en`.
 
 ### Examples of languages available : 
 
